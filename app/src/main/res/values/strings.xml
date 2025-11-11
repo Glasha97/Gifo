@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Gifo</string>
+    <string name="trending">Trending</string>
+    <string name="cats">Cats</string>
+    <string name="love">Love</string>
+    <string name="funny">Funny</string>
+    <string name="memes">Memes</string>
+    <string name="movies">Movies</string>
+    <string name="search_gifs_placeholder">Search a GIFs</string>
+    <string name="search_start_typing">Start typing to find GIFs</string>
+    <string name="please_wait">Please wait, loading</string>
+    <string name="gif_fallback_title">Gif</string>
+    <string name="author_label">Author</string>
+    <string name="author_not_found">Author is not found</string>
+    <string name="created_at_label">Created At</string>
+    <string name="copy_url_to_clipboard">Copy URL to clipboard</string>
+    <string name="gif_url_copied">GIF URL copied to clipboard</string>
+</resources>
