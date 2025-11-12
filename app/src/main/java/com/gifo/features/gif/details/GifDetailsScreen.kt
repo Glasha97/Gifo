@@ -42,7 +42,7 @@ import com.gifo.common.core.BaseComposeScreen
 import com.gifo.common.preview.PreviewContainer
 import com.gifo.common.resource.DrawableResource
 import com.gifo.common.resource.StringResource
-import com.gifo.common.utils.copyToClickboard
+import com.gifo.common.utils.copyToClipboard
 import com.gifo.features.gif.models.GifUi
 import org.koin.compose.viewmodel.koinViewModel
 import org.koin.core.parameter.parametersOf
@@ -155,7 +155,7 @@ private fun PortraitContent(
             text = stringResource(StringResource.copy_url_to_clipboard),
             modifier = Modifier.align(Alignment.CenterHorizontally),
             onClick = {
-                context.copyToClickboard(gif.url)
+                context.copyToClipboard(gif.url)
                 showSnackbarMessage()
             },
         )
@@ -240,7 +240,7 @@ private fun HorizontalContent(
                     text = stringResource(StringResource.copy_url_to_clipboard),
                     modifier = Modifier.align(Alignment.CenterHorizontally),
                     onClick = {
-                        context.copyToClickboard(gif.url)
+                        context.copyToClipboard(gif.url)
                         showSnackbarMessage()
                     },
                 )

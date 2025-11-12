@@ -61,7 +61,6 @@ class GifoClient {
             url {
                 protocol = URLProtocol.HTTPS
                 host = "api.giphy.com"
-                parameters.append("limit", "25")
                 parameters.append("region", java.util.Locale.getDefault().country)
                 parameters.append("api_key", BuildConfig.GIPHY_API_KEY)
             }
