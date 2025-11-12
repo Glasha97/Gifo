@@ -29,10 +29,18 @@ android {
         buildConfigField("String", "GIPHY_API_KEY", "\"${giphyApiKey}\"")
     }
 
+    signingConfigs.create("release") {
+        storeFile = file("$rootDir/keys/release_key")
+        storePassword = "00000000"
+        keyAlias = "00000000"
+        keyPassword = "00000000"
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {

@@ -16,6 +16,7 @@ import androidx.compose.material3.Snackbar
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.NonRestartableComposable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
@@ -35,6 +36,7 @@ import com.gifo.common.resource.DrawableResource
 import kotlinx.coroutines.launch
 
 @Composable
+@NonRestartableComposable
 fun <Vm> BaseComposeScreen(
     modifier: Modifier = Modifier,
     vm: BaseVm<Vm>,
