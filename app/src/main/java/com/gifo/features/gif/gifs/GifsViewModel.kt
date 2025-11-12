@@ -164,7 +164,7 @@ internal class GifsViewModel(private val gifRepository: GifRepository) : BaseVm<
             s.copy(
                 isSearchMode = value,
                 searchQuery = "",
-                searchGifs = GifsScreenState.Pagination()
+                searchGifs = GifsScreenState.Pagination(),
             )
         }
     }
